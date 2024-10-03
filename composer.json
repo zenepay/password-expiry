@@ -1,0 +1,44 @@
+{
+    "name": "zenepay/password-expiry",
+    "type": "library",
+    "description": "It handles password expiry of users.",
+    "keywords": [
+        "Zenepay",
+        "PasswordExpiry",
+        "Laravel password expiry"
+    ],
+    "homepage": "https://github.com/zenepay/password-expirable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nitiruj Atipongpisal",
+            "email": "zennitiruj@gmail.com",
+            "role": "Lead Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^10.0|^11.0",
+        "php": "^8.1",
+        "imanghafoori/laravel-password-history": "^1.0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zenepay\\PasswordExpiry\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Zenepay\\PasswordExpiry\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zenepay\\PasswordExpiry\\PasswordExpiryServiceProvider"
+            ]
+        }
+    }
+}
