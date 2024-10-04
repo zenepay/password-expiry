@@ -13,23 +13,6 @@ Via Composer
 ``` bash
 $ composer require zenepay/password-expiry
 ```
-For Laravel version < 11
-You must include below the service provider in config/app.php
-
-```php
-
-'providers' => [
-    ...
-    Zenepay\PasswordExpiry\PasswordExpiryServiceProvider::class,
-],
-```
-For Laravel 11.x, include this to bootstrap/provider.php
-```php
-
-return [
-    ...
-    Zenepay\PasswordExpiry\PasswordExpiryServiceProvider::class,
-],
 
 You need to migrate you database.
 
@@ -153,7 +136,8 @@ If you discover any security related issues, please email :author_email instead 
 
 ## Credits
 
-- [:author_name][link-author]
+- [Iman]https://github.com/imanghafoori1 for his great password history package
+- [Fahad Ali]https://github.com/fahad-larasoft for is an inspireation of password-expirable package
 - [All Contributors][link-contributors]
 
 ## License
