@@ -4,7 +4,7 @@ Password expiry
 - It allows you to set user password to expire in x days after creating/resetting.
 - Using imanghafoori/laravel-password-history, user cannot use the last x previous paswords.
 - Can use as middleware and validation
-- It does support Laravel 9.x - 12.x
+- It does support Laravel 9.x - 13.x
 
 ## Install
 
@@ -78,8 +78,8 @@ use Zenepay\PasswordExpiry\CheckPasswordExpired;
 })
 
 ```
-# For Laravel + Filament 3
-For Laravel Filament 3, you can put to panel middleware
+# For Laravel + Filament 3-5
+For Laravel Filament 3-5, you can put to panel middleware
 ```php
 use Zenepay\PasswordExpiry\CheckPasswordExpired;
 
